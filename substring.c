@@ -1,3 +1,5 @@
+#include <stdio.h>
+
 int main(int argc, char** argv){
 
 	substring("chaine longue", 2, 9);
@@ -23,7 +25,7 @@ char* substring(char* in, int start, int end){
 			out[j++] = in[i];
 		}
 	}
-	out[outLength] = "\0";
+	out[outLength] = '\0';
 	return out[outLength];
 }
 
