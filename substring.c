@@ -23,7 +23,8 @@ char* substring(char* in, int start, int end){
 			out[j++] = in[i];
 		}
 	}
-	return out[outLength] = "\0";
+	out[outLength] = "\0";
+	return out[outLength];
 }
 
 int length(char* str){
