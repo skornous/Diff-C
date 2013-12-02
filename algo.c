@@ -12,7 +12,7 @@ string init_orga(int argc, string argv){
 	sortedTab = malloc(sizeof(char)*argc);
 	for (int i = 0; i < argc-1; i++)
 	{
-		if (argv[i][0] == "-")
+		if (argv[i][0] == '-')
 		{
 			if (idOption >= argc-2)
 			{
