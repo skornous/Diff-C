@@ -1,8 +1,13 @@
 #include <stdio.h>
+#include <stdlib.h>
+
+char* substring(char*,int,int);
+int length(char*);
 
 int main(int argc, char** argv){
 
-	substring("chaine longue", 2, 9);
+	char* test = substring("chaine longue", 2, 9);
+	printf("%s test\n", test );
 }
 
 
@@ -12,13 +17,13 @@ char* substring(char* in, int start, int end){
 	int j;
 	int inLength;
 	int outLength;
-
+	int i;
 	j = 0;
 	inLength = length(in);
 	outLength = inLength - (start+(inLength - end));
 	out = malloc(sizeof(char)*outLength);
 
-	for (int i = 0; i < (inLength-1); i++)
+	for (i = 0; i < (inLength-1); i++)
 	{
 		if ((i >= start) && (i <= end))
 		{
@@ -26,7 +31,7 @@ char* substring(char* in, int start, int end){
 		}
 	}
 	out[outLength] = '\0';
-	return out[outLength];
+	return out;
 }
 
 int length(char* str){
