@@ -10,16 +10,16 @@ string init_orga(int argc, string argv){
 	idFile = 0;
 	idOption = 2;
 	sortedTab = malloc(sizeof(char)*argc);
-	for (int i = 0; argc-1; i++)
+	for (int i = 0; $i < argc-1; i++)
 	{
-		if (argv($i) = "-")
+		if (argv[i][0] == "-")
 		{
 			if (idOption >= argc-2)
 			{
 				return sortedTab[0] = "O";
 			}
 			else{
-				sortedTab[1+idOption++] = argv($i);
+				sortedTab[1+idOption++] = argv[i];
 			}
 		}
 		else{
@@ -28,7 +28,7 @@ string init_orga(int argc, string argv){
 				return sortedTab[0] = "F";
 			}
 			else{
-				sortedTab[1+idFile++] = argv($i);
+				sortedTab[1+idFile++] = argv[i];
 			}
 		}
 	}
