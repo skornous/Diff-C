@@ -32,5 +32,6 @@ string init_orga(int argc, string argv){
 			}
 		}
 	}
+	return sortedTab[0] = "R";
 
 }
