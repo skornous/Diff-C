@@ -10,7 +10,7 @@ string init_orga(int argc, string argv){
 	idFile = 0;
 	idOption = 2;
 	sortedTab = malloc(sizeof(char)*argc);
-	for (int i = 0; $i < argc-1; i++)
+	for (int i = 0; i < argc-1; i++)
 	{
 		if (argv[i][0] == "-")
 		{
