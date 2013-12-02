@@ -52,7 +52,7 @@ int getIdOptions(char* opt)
 	{ return 12;)
 	if(strcmp(undashedOption,"left-column"))
 	{ return 13;}
-	if(strcmp(undashedOption,"suppress-common lines"))
+	if(strcmp(undashedOption,"suppress-common-lines"))
 	{ return 14;}
 	if(strcmp(undashedOption,"p") || strcmp(undashedOption,"show-c-function"))
 	{ return 15;}
