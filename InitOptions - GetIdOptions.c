@@ -17,9 +17,9 @@ int init_options(char args**)
 	return options;
 }
 
-int getIdOptions(string opt)
+int getIdOptions(char* opt)
 {
-	string undashedOption;
+	char* undashedOption;
 	
 	if(opt[1] == '-')
 	{ undashedOption = substring(opt, 2, length(opt));}
